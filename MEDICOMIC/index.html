@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: black;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+   .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 23%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: darkgrey;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="Register.html">Register</a>
+  <a href="login.html">Login</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <input type="text" placeholder="Search..">
+  <a href="javascript:void(0);" class="icon">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px; background-image:url(./images/clinic1.jpg">
+  <h1 style="text-align:center; padding-top: 150px;font-size:30px">WELCOME TO MEDICOMIC</h1>
+  <p style="text-align:center">How can we help you?</p>
+  <div class="row">
+  <div class="column" style="padding-bottom: 100px">
+    <div class="card">
+      <h3>FIND A LOCATION ></h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>FIND A DOCTOR ></h3>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>PATIENT PORTAL ></h3>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>DONATE ></h3>
+    </div>
+  </div>
+</div>
+</div>
+<div style="text-align:center">
+<h1>Join MEDICOMIC for better health care. Get a sign-on bonus!</h1>
+<img src="./images/clinic.jpg" style=>
+<p style="font-size:20px">We’re looking forward to helping you get more informations on the whereabouts of hospitals, departments,doctors and their disponible time. <p>
+</div>
+<footer style="padding-top:30px">
+  <p>Author: ANNY CHRISTELLE IRAKOZE<br>
+  <a href="mailto:annyirakoze12@example.com">annyirakoze12@gmail.com</a></p>
+</footer>
+</body>
+</html>
